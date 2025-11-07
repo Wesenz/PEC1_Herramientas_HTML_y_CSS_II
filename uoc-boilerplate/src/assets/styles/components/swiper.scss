@@ -10,9 +10,11 @@
   &-button-prev {
     color: variables.$uoc-masterbrand;
   }
+
     --swiper-pagination-bottom: 25px;  // Separación desde abajo
   --swiper-pagination-left: auto;
   --swiper-pagination-right: auto;  
+
   &-pagination {
     &-bullet {
       background: variables.$uoc-corporate;
@@ -21,6 +23,7 @@
       offset-position: 25% 95%;
     }
   }
+
   > .swiper-wrapper {
     width: 100%;
     height: calc(100% + 30px); // Espacio extra para paginación
@@ -34,12 +37,14 @@
       justify-content: center;
       -ms-flex-align: center;
       align-items: center;
+
       > img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border: 5px solid variables.$uoc-corporate;
       }
+
       > figcaption {
         margin-top: variables.rem(20px);
         font-weight: 600;

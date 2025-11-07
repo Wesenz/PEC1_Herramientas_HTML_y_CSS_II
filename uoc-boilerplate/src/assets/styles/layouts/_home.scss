@@ -17,6 +17,14 @@ body {
   color: $uoc-corporate;
 }
 
+a:hover {
+  color: $uoc-corporate;
+  background-color: $uoc-masterbrand;
+  text-decoration: none;
+  padding: rem(8px);
+  border-radius: rem(6px);
+}
+
 .navbar {
   display: flex;
   flex-direction: column;
@@ -45,16 +53,19 @@ body {
     flex-direction: row;
     font-size: rem(18px);
   }
+
   > a {
     color: $uoc-corporate;
     margin: 0 rem(8px);
     text-decoration: none;
+
     > img {
       vertical-align: middle;
       width: rem(225px);
       height: auto;
     }
   }
+
   > ul {
     list-style: none;
     padding: 0;
@@ -62,24 +73,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     > li {
       margin: rem(8px);
       text-decoration: none;
+
       > a {
         color: white;
         text-decoration: none;
         background-color: $uoc-corporate;
         padding: rem(8px);
         border-radius: rem(6px);
-      }
-      &:hover {
-        a {
-          color: $uoc-corporate;
-          background-color: $uoc-masterbrand;
-          text-decoration: none;
-          padding: rem(8px);
-          border-radius: rem(6px);
-        }
       }
     }
   }
@@ -119,14 +123,15 @@ body {
       font-size: rem(48px);
     }
   }
+
   > .separator {
     width: 100%;
-    border: none;
     height: 2px;
     border: 1px solid $uoc-corporate;
     background-color: $uoc-corporate;
     margin: 1rem 0;
   }
+
   > h2 {
     font-size: rem(14px);
     font-weight: 400;
