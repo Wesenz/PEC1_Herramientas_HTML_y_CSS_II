@@ -1,0 +1,50 @@
+@use "../variables" as variables;
+
+.swiper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+  &-button-next,
+  &-button-prev {
+    color: variables.$uoc-masterbrand;
+  }
+    --swiper-pagination-bottom: 25px;  // Separación desde abajo
+  --swiper-pagination-left: auto;
+  --swiper-pagination-right: auto;  
+  &-pagination {
+    &-bullet {
+      background: variables.$uoc-corporate;
+      width: 16px;
+      height: 16px;
+      offset-position: 25% 95%;
+    }
+  }
+  > .swiper-wrapper {
+    width: 100%;
+    height: calc(100% + 30px); // Espacio extra para paginación
+    > .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      gap: variables.rem(10px);
+      text-align: center;
+      font-size: 18px;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 5px solid variables.$uoc-corporate;
+      }
+      > figcaption {
+        margin-top: variables.rem(20px);
+        font-weight: 600;
+        color: variables.$uoc-corporate;
+      }
+    }
+  }
+}

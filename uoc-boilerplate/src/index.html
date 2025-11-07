@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/components/swiper.scss">
+  <link rel="stylesheet" type="text/css">
+  <title>PEC1 - mfernandezg</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <a href="index.html">
+      <img src="./assets/images/logo.png" alt="UOC Logo">
+    </a>
+    <span>Herramientas HTML y CSS II - PEC 1</span>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="uoc-container">
+    <div class="info-container">
+      <h1>Bangkok</h1>
+      <hr class="separator">
+      <h2>Como capital política, económica, cultural, gastronómica y espiritual de Tailandia, Bangkok cuenta tanto con
+        el encanto clásico y cultural que se desprende en todo el país como con las comodidades modernas, a veces
+        mostradas al viajero de una forma aparentemente caótica, pero siempre con esa sonrisa amable, seña de identidad
+        de la hospitalidad tailandesa.</h2>
+
+      <h2>Sin duda, las vacaciones en Tailandia tienen que incluir una visita a la capital del reino, Bangkok o Krung
+        Thep, «la ciudad de los ángeles», como se conoce entre sus habitantes. Muchos de los turistas que viajan a
+        Bangkok se quedan abrumados de inmediato por las grandes dimensiones de la ciudad y su gran variedad de opciones
+        y atracciones turísticas, después de dos siglos de rápido crecimiento desde que el rey Rama I, el primer rey de
+        la actual dinastía Chakri, fundara la ciudad en 1782. </h2>
+
+      <h2>Desde ese día, Bangkok ha crecido y se ha desarrollado como una ciudad cosmopolita del siglo XXI, con más de
+        10
+        millones de habitantes. Mientras que, al principio, la inmensidad de la ciudad y sus calles vibrantes y llenas
+        de vida pueden llegar a intimidar al viajero, aquellos que disfruten de sus vacaciones en Bangkok se enamorarán
+        rápidamente de cada uno de sus rincones por todo lo que ofrecen: desde exóticos templos que hablan por sí solos
+        de la arraigada historia budista de Tailandia hasta los modernos centros comerciales, que han convertido a las
+        compras en una parte fundamental de unas vacaciones en Tailandia y en su capital.</h2>
+
+      <h2>Bangkok cuenta con una serie de atractivos turísticos que harán las delicias de sus visitantes, tanto para
+        aquellos que estén de paso por la capital tailandesa como para los que Bangkok sea el destino único y final de
+        sus días de descanso. </h2>
+    </div>
+
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./assets/images/bangkok1.jpeg" alt="#">
+          <figcaption>
+            <a href="https://commons.wikimedia.org/wiki/User:Benh">
+              Autor: Benh LIEU SONG
+            </a>
+          </figcaption>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/bangkok2.jpg" alt="#">
+          <figcaption>
+            <a href="https://www.flickr.com/people/37583176@N00">
+              Autor: Ninara
+            </a>
+          </figcaption>
+        </div>
+        <div class="swiper-slide">
+          <img src="./assets/images/bangkok3.jpeg" alt="#">
+          <figcaption>
+            <a href="https://commons.wikimedia.org/w/index.php?search=bangkok&title=Special%3AMediaSearch&type=image">
+              Autor: Eugene Ormandy
+            </a>
+          </figcaption>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // Inicialización de Swiper y sus módulos
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
