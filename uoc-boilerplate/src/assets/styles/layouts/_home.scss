@@ -17,7 +17,7 @@ body {
   color: $uoc-corporate;
 }
 
-a:hover {
+li > a:hover {
   color: $uoc-corporate;
   background-color: $uoc-masterbrand;
   text-decoration: none;
